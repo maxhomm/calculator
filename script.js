@@ -1,3 +1,4 @@
+'use strict'
 
 let money = prompt('Каков ваш месячный доход?');
 
@@ -5,6 +6,9 @@ let income = 'Доход от фриланса: 20000 рублей';
 
 let addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую');
 
+console.log(typeof money);
+console.log(typeof income);
+console.log(typeof deposit);
 
 let deposit = confirm('Есть ли у вас депозит в банке?');
 
