@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 let money = prompt('Каков ваш месячный доход?');
 
@@ -8,9 +8,9 @@ let addExpenses = prompt('Перечислите возможные расход
 
 console.log(typeof money);
 console.log(typeof income);
-console.log(typeof deposit);
 
 let deposit = confirm('Есть ли у вас депозит в банке?');
+console.log(typeof deposit);
 
 let expenses1 = prompt('Введите обязательную статью расходов');
 let amount1 = prompt('Во сколько это обойдется?');
@@ -30,7 +30,7 @@ console.log(`Цель: заработать ${mission} рублей`);
 addExpenses = addExpenses.toLowerCase().split(', ');
 console.log(addExpenses);
 
-budgetDay = Math.floor(budgetMonth/30);
+let budgetDay = Math.floor(budgetMonth/30);
 console.log('Бюджет на день: ' + budgetDay);
 
 if (budgetDay >= 1200) {
