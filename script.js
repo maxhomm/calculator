@@ -5,6 +5,7 @@ let money = prompt('Каков ваш месячный доход?');
 let income = 'Доход от фриланса: 20000 рублей';
 
 let addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую');
+addExpenses = addExpenses.replace(/\s/g, ''); // removes all the spaces
 
 console.log(typeof money);
 console.log(typeof income);
@@ -27,7 +28,7 @@ let period = Math.ceil(mission/budgetMonth);
 console.log(`Цель будет достигнута за ${period} месяцев`);
 console.log(`Цель: заработать ${mission} рублей`);
 
-addExpenses = addExpenses.toLowerCase().split(', ');
+addExpenses = addExpenses.toLowerCase().split(',');
 console.log(addExpenses);
 
 let budgetDay = Math.floor(budgetMonth/30);
